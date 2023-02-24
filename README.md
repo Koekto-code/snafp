@@ -1,7 +1,7 @@
 
 ## snafp
 
-Some Nest.js App For Practice
+Some Nest.js App For Practice.
 Original repo from course: https://github.com/dadi2015/lesson_nestjs
 
 ## Installation

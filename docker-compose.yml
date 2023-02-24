@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  postgresql:
+    image: postgres:alpine
+    container_name: pg1
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_HOST=localhost
+      - POSTGRES_USER=someuser
+      - POSTGRES_PASSWORD=qwertier
+      - POSTGRES_DATABASE=somedb
+    command: postgres
+    restart: always
+
+  redis:
+    image: redis:alpine3.14
+    container_name: redis1
+    ports:
+      - '6379-6379'
